@@ -4,18 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ac71df3-2782-45e5-901e-a8b67073d527" name="Changes" comment="created DTO classes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/kz/halykacademy/implementation/AuthorProviderImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kz/halykacademy/implementation/BookProviderImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kz/halykacademy/implementation/PublisherProviderImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kz/halykacademy/provider/AuthorProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kz/halykacademy/provider/BookProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kz/halykacademy/provider/Provider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kz/halykacademy/provider/PublisherProvider.java" afterDir="false" />
+    <list default="true" id="1ac71df3-2782-45e5-901e-a8b67073d527" name="Changes" comment="created Interfaces and Implementations of them">
+      <change afterPath="$PROJECT_DIR$/src/main/java/kz/halykacademy/configuration/SpringWebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kz/halykacademy/controller/BookControllerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kz/halykacademy/controller/interfaces/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kz/halykacademy/storeTemp/BookRep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kz/halykacademy/storeTemp/BookRepImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/book/list.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/openApi.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/halykacademy/dto/AuthorDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/halykacademy/dto/AuthorDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/halykacademy/dto/BookDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/halykacademy/dto/BookDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/halykacademy/dto/PublisherDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/halykacademy/dto/PublisherDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/halykacademy/implementation/BookProviderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/halykacademy/implementation/BookProviderImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,9 +50,38 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Hell13t/IdeaProjects/RESTful&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;4dfbcc19d331edae9baa7270eab14aa0&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Hell13t\IdeaProjects\bookstore\src\main\webapp\views\book" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="kz.halykacademy.storeTemp" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="SwaggerCodegen">
+      <option name="activeConfigurationType" value="FILE" />
+      <option name="configurationPath" value="" />
+      <option name="customJreEnabled" value="false" />
+      <option name="customTemplatesPath" value="" />
+      <option name="enableDebugLogging" value="false" />
+      <option name="generateToPath" value="C:\Users\Hell13t\IdeaProjects\bookstore\gen" />
+      <option name="generationParameters">
+        <list />
+      </option>
+      <option name="generatorPath" value="https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/5.0.0/openapi-generator-cli-5.0.0.jar" />
+      <option name="jdkPath" value="" />
+      <option name="language" value="java" />
+      <option name="specificationPath" value="C:\Users\Hell13t\IdeaProjects\bookstore\src\openApi.yml" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -61,7 +90,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1657559132103</updated>
-      <workItem from="1657559133758" duration="6001000" />
+      <workItem from="1657559133758" duration="6264000" />
+      <workItem from="1657810862907" duration="8733000" />
+      <workItem from="1657903889989" duration="4043000" />
+      <workItem from="1658058932586" duration="7319000" />
+      <workItem from="1658081141424" duration="32000" />
+      <workItem from="1658083773220" duration="158000" />
+      <workItem from="1658418078368" duration="3682000" />
+      <workItem from="1658764126062" duration="6618000" />
+      <workItem from="1658807983141" duration="1609000" />
+      <workItem from="1658842308047" duration="2887000" />
+      <workItem from="1658853190961" duration="4667000" />
+      <workItem from="1658936275206" duration="4631000" />
+      <workItem from="1658948117831" duration="2109000" />
+      <workItem from="1660133644986" duration="1450000" />
+      <workItem from="1660500642705" duration="328000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit, create DTO classes">
       <created>1657560280658</created>
@@ -91,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657561437098</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="created Interfaces and Implementations of them">
+      <created>1657565257638</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1657565257638</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +162,7 @@
     <MESSAGE value="Initial commit, create DTO classes" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="created DTO classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="created DTO classes" />
+    <MESSAGE value="created Interfaces and Implementations of them" />
+    <option name="LAST_COMMIT_MESSAGE" value="created Interfaces and Implementations of them" />
   </component>
 </project>

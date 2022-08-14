@@ -1,13 +1,14 @@
 package kz.halykacademy.implementation;
 
 import kz.halykacademy.dto.BookDTO;
-import kz.halykacademy.dto.PublisherDTO;
 import kz.halykacademy.provider.BookProvider;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class BookProviderImpl implements BookProvider {
 
     ArrayList<BookDTO> bookList = new ArrayList<>(){
